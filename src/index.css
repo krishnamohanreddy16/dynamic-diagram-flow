@@ -1,13 +1,37 @@
-body {
+html, body, #root {
+  height: 100%;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 340px;
+  border-right: 1px solid #e6e6e6;
+  padding: 16px;
+  box-sizing: border-box;
+  background: #fafafa;
+  overflow-y: auto;
+}
+
+.diagram {
+  flex: 1;
+  position: relative;
+}
+
+.controls {
+  margin-top: 12px;
+}
+
+.node-form, .edge-form {
+  margin-bottom: 12px;
+}
+
+input, select, textarea, button {
+  font-size: 14px;
 }
